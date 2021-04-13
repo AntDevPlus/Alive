@@ -1,8 +1,7 @@
 # Alive
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/alive`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+/!\ This is my first gem creation test, please be indulgent
+Alive is a gem to know if online service is working or not.
 
 ## Installation
 
@@ -22,7 +21,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+    require 'alive'
+
+    #We want to know if the http server is started on the local
+    service = Alive::Service.new("127.0.0.1",80)
+    #true or false
+    service.alive?
+```
 
 ## Development
 
@@ -32,5 +38,5 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/alive.
+Bug reports and pull requests are welcome on GitHub at https://github.com/AntDevPlus/alive.
 
